@@ -1,0 +1,47 @@
+{
+    "name": "libs-component",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/output-umd.js",
+    "scripts": {
+        "dev": "eslint ./src && rollup -wc rollup.config.dev.js",
+        "build": "eslint ./src && rollup -c rollup.config.dev.js",
+        "build:prod": "eslint ./src && rollup -c rollup.config.prod.js",
+        "lint": "eslint ./src",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "vue",
+        "libs"
+    ],
+    "author": "huanglu 398443190@qq.com",
+    "license": "ISC",
+    "dependencies": {
+        "rollup": "^2.35.1",
+        "uuid": "^3.4.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/plugin-transform-runtime": "^7.12.10",
+        "@babel/plugin-transform-typeof-symbol": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@vue/compiler-sfc": "^3.0.4",
+        "babel-plugin-transform-es2015-typeof-symbol": "^6.23.0",
+        "echarts": "^5.0.0",
+        "eslint": "^7.15.0",
+        "eslint-plugin-vue": "^7.3.0",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-json": "^4.0.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "rollup-plugin-postcss": "^4.0.0",
+        "rollup-plugin-vue": "^6.0.0",
+        "sam-test-data": "^0.0.5",
+        "sass": "^1.30.0"
+    }
+}
